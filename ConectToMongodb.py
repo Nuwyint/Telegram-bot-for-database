@@ -5,7 +5,7 @@ from pymongo import *
 
 def uploadDataBase(structItem, user_id):
     cluster = MongoClient(
-        "mongodb+srv://Nuwyint:23112004@testfortelegramapi.pcazooy.mongodb.net/telebot?retryWrites=true&w=majority")
+        "link on data base and om collections")
     db = cluster["telebot"]
     print("Conect on")
 
