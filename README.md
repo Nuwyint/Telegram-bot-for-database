@@ -1,2 +1,2 @@
 # Telegram-bot-for-database
-simple bot for download data on database from mongoDB
+A simple bot for loading database data into mongoDB
