@@ -1,7 +1,7 @@
 import telebot
 from ConectToMongodb import *
 
-TOKEN = '6022951486:AAFsk95GftNYjSnB2Awl4E0o0zmELIoiLS0'
+TOKEN = 'TOKEN_TG_BOT'
 bot = telebot.TeleBot(TOKEN)
 print('Bot on')
 structItem = {}
