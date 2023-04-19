@@ -4,8 +4,7 @@ from pymongo import *
 # http://t.me/DataBaseUploadBot
 
 def uploadDataBase(structItem, user_id):
-    cluster = MongoClient(
-        "link on data base and om collections")
+    cluster = MongoClient("mongodb+srv://Nuwyint:23112004@testfortelegramapi.pcazooy.mongodb.net/telebot?retryWrites=true&w=majority")
     db = cluster["telebot"]
     print("Conect on")
 
@@ -13,13 +12,11 @@ def uploadDataBase(structItem, user_id):
     pos = ({"x": pos[0], "y": pos[1]})
 
     users = {
-        "_id": int(structItem[user_id]['id']),
         "name": structItem[user_id]['name'],
         "category": structItem[user_id]['category'],
         "position": pos,
         "imgUrl": structItem[user_id]['ImgUrl'],
         "text": structItem[user_id]['text'],
-        "___V": structItem[user_id]['___V'],
         "modelName": structItem[user_id]['modelName'],
     }
 
@@ -33,9 +30,7 @@ def uploadNewModel(structItem, user_id):
     print("Conect on")
 
     model = {
-        "_id": int(structItem[user_id]['id']),
         "name": structItem[user_id]['name'],
-        "___V": structItem[user_id]['__V'],
         "Url": structItem[user_id]['Url'],
     }
 
